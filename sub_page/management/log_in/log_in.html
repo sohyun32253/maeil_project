@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/for_log_in.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/log_in_js.js"></script>
+    <title>로그인</title>
+</head>
+<body>
+    <div class="all_wrap">
+        <div class="position_wrap">
+            <h1><img src="image/logo.jpeg" alt="maeil" width="170px" height="100px"></h1>
+            <div class="log_in_wrap">
+                <form action="#none" method="post">
+                <fieldset>
+                <div class="log_in_box">
+                    <label for="user_id"><span class="hide">아이디</span></label>
+                    <div class="log_in_box_wrap">
+                        <div class="id_wrap">
+                            <img src="image/user.png" alt="" width="30px" height="30px">
+                            <input type="text" id="user_id" name="user_id" placeholder="아이디">
+                        </div>
+                        <label for="user_pw"><span class="hide">비밀번호</span></label>
+                        <div class="pw_wrap">
+                            <img src="image/lock.png" alt="" width="30px" height="30px">
+                            <input type="password" id="user_pw" name="user_pw" placeholder="비밀번호">
+                    </div>
+                    </div>
+                </div>
+                <div class="button_wrap">
+                <input type="checkbox" id="remember_user_id">
+                <label for="remember_user_id">로그인 상태 유지</label>
+                <button class="log_in_button" type="submit">로그인</button>
+                </div>
+                </fieldset>
+                </form>
+            
+            </div>
+            <div class="user_more">
+            <ul>
+            <li><a href="#none">아이디 찾기</a>
+            <!-- <img src="image/bar.png" width="20px" height="30px"></li> -->
+            <li><a href="#none">비밀번호 찾기</a>
+            <!-- <img src="image/bar.png" width="20px" height="30px"></li> -->
+            <li><a href="#none">매일 통합회원이 아니신가요?</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

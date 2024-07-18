@@ -1,0 +1,122 @@
+
+.main_wrap {
+    width: 1200px;
+    margin: auto;
+    height: 4700px;
+    position: relative;
+    z-index: 2;
+    display:flex;
+  }
+  .side_menu02_open{
+    display:none
+  }
+  .highlight_text{
+    color:#194e91;
+    font-size: 18px;;
+  }
+  .field_of_businuess{
+    display:flex;
+    width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  .field_of_businuess li{
+    border: 1px solid #e9e9e9;
+    width: 230px;
+    height: 260px;
+    white-space:wrap ;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+  }
+  .field_of_businuess img{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30;
+    margin-top: 25px;
+  }
+  .text_size{
+    font-size: 12px;
+  }
+  .maeil_introduce_page h2{
+    font-size: 24px;
+    color: #194e91;
+    margin-bottom: 30px;
+  }
+  .maeil_introduce_page h3{
+    font-size: 22px;
+    color: #194e91;
+    margin-bottom: 30px;
+
+  }
+  .businuess_part1{
+    margin-bottom:30px;
+  }
+  .business_part2_wrap{
+    background: #eef8fd;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+  }
+  .business_part2 p{
+    margin-bottom: 30px;
+  }
+
+  .businuess_sidebar{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 10px;
+  }
+  .product_sell img{
+    margin:0;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .global_businuess_title{
+    display:inline-block;
+    position:relative;
+    bottom: 13px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 24px;
+  }
+  .global_wrap{
+    background: #eef8fd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+  }
+.global_01{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+.global_02{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.global_03{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.global_04{
+  padding-top: 30px;
+}
+.global_04 img{
+margin-right: 30px;
+}
+.global_text_title{
+  font-size: 18px;
+  color:#194e91;
+  margin-bottom: 10px;
+}
+.global_text dd{
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+

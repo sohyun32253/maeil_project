@@ -1,0 +1,362 @@
+.main_wrap .sub_section_wrap > img {
+  display: block;
+  margin: 90px auto 96px;
+}
+
+.main_wrap {
+  width: 1200px;
+  margin: auto;
+  height: 2100px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.sub_section_wrap .report_wrap img {
+  margin: 0 auto;
+}
+
+section {
+  width: 930px;
+}
+
+.section_wrap {
+  width: 930px;
+  position: relative;
+}
+
+#main .left_align {
+  position: absolute;
+  left: 0;
+  top: -40px;
+}
+
+.adv_wrap {
+  width: 100%;
+  height: 1600px;
+  position: relative;
+  margin: 50px 0 50px;
+}
+
+.adv01_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 485px;
+  height: 260px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  top: 0; /* 예제 위치 */
+  left: 0; /* 예제 위치 */
+}
+
+.adv01_wrap .adv01 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv01_wrap .adv01:hover {
+  transform: scale(1.2);
+}
+
+.adv02_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 425px;
+  height: 260px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  top: 0; /* 예제 위치 */
+  right: 0; /* 예제 위치 */
+}
+
+.adv02_wrap .adv02 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv02_wrap .adv02:hover {
+  transform: scale(1.2);
+}
+
+/* adv03 */
+.adv03_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 296px;
+  height: 480px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  left: 0;
+  top: 280px;
+}
+
+.adv03_wrap .adv03 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv03_wrap .adv03:hover {
+  transform: scale(1.2);
+}
+
+/* adv04 */
+.adv04_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 296px;
+  height: 400px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  top: 280px; /* 예제 위치 */
+  left: 316px; /* 예제 위치 */
+}
+
+.adv04_wrap .adv04 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv04_wrap .adv04:hover {
+  transform: scale(1.2);
+}
+
+/* adv05 */
+.adv05_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 298px;
+  height: 480px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  right: 0;
+  top: 280px;
+}
+
+.adv05_wrap .adv05 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv05_wrap .adv05:hover {
+  transform: scale(1.2);
+}
+
+/*adv06*/
+.adv06_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 296px;
+  height: 400px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  left: 0;
+  top: 780px;
+}
+
+.adv06_wrap .adv06 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv06_wrap .adv06:hover {
+  transform: scale(1.2);
+}
+
+/* adv07 */
+.adv07_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 296px;
+  height: 400px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  left: 317px;
+  top: 700px;
+}
+
+.adv07_wrap .adv07 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv07_wrap .adv07:hover {
+  transform: scale(1.2);
+}
+
+/* adv08 */
+.adv08_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 298px;
+  height: 400px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  right: 0;
+  top: 780px;
+}
+
+.adv08_wrap .adv08 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv08_wrap .adv08:hover {
+  transform: scale(1.2);
+}
+
+/* adv09 */
+.adv09_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 296px;
+  height: 400px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  left: 0;
+  top: 1200px;
+}
+
+.adv09_wrap .adv09 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv09_wrap .adv09:hover {
+  transform: scale(1.2);
+}
+
+/* adv10 */
+.adv10_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 296px;
+  height: 480px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  /* 필요에 따라 위치 조정 */
+  left: 317px;
+  top: 1120px;
+}
+
+.adv10_wrap .adv10 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv10_wrap .adv10:hover {
+  transform: scale(1.2);
+}
+
+/* adv11 */
+
+.adv11_wrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 298px;
+  height: 400px;
+  position: absolute; /* 이미지를 배치할 때 필요 */
+  right: 0;
+  top: 1200px;
+}
+
+.adv11_wrap .adv11 {
+  width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+  height: 100%; /* 이미지를 컨테이너 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  transition: transform 0.3s ease;
+}
+
+.adv11_wrap .adv11:hover {
+  transform: scale(1.2);
+}
+
+.pager {
+  position: absolute;
+  left: 320px;
+  display: flex;
+  margin: auto;
+}
+
+.pager > a {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pager > a:first-child {
+  background: #194e91;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+form {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  display: flex;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+form select {
+  height: 36px;
+  margin-right: 5px;
+  padding: 0 10px 0 5px;
+  font-size: 15px;
+}
+
+form button {
+  width: 36px;
+  height: 36px;
+  background: #194e91;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+form img {
+  width: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form .input_txt {
+  height: 36px;
+  padding-left: 7px;
+  box-sizing: border-box;
+}
+
+form .search {
+  position: relative;
+}
+
+.depth1 {
+  background: #084f8c;
+  color: #fff;
+}

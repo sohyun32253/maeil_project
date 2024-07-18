@@ -1,0 +1,83 @@
+
+.main_wrap {
+    width: 1200px;
+    margin: auto;
+    height: 800px;
+    position: relative;
+    z-index: 2;
+    display:flex;
+  }
+  .side_menu01_open {
+    display: none;
+  }
+  .spread_underline {
+    color: #333;
+    text-decoration: none;
+    padding: 15px 0;
+    position: relative;
+  }
+  .spread_underline:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #194e91;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .spread_underline:hover:after {
+    width: 100%;
+    left: 0;
+  }
+.location_text{
+  position:relative
+}
+.location_text h2{
+  display:block;
+  color: #194e91;
+  position:absolute;
+  right: -80px;
+  
+}
+.text_decoration{
+  background: #eef8fd;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color:#194e91;
+  line-height: 2;
+  width: 455px;
+}
+.highlight{
+  font-weight: bold;
+  font-size: 18px;
+}
+#map{
+  margin-top: 70px;
+  border-radius: 20px;
+  width: 455px;
+  height: 290px;
+}
+.map_text{
+  font-size: 18px;
+}
+.location_wrap{
+  margin-top: 70px;
+  display:inline-block;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.location_wrap img{
+  border-radius: 20px;
+}
+.maeil_introduce_page{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
