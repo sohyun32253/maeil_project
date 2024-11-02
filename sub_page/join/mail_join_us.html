@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../../images/main_icon.png">
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <title>회원가입</title>
     <style>
       h1{
@@ -15,17 +16,17 @@
         width: 170px;
         height: 101px;
       }
-      form{
 
+      form{
         padding:0 10px 0;
         box-sizing: border-box;
         font-size: 16px;
         width: 600px;
-margin: auto;
+        margin: auto;
         border: 2px solid #e2e2e2;
         border-radius: 10px;
-      
       }
+
       fieldset{
         border: none;
       }
@@ -35,59 +36,77 @@ margin: auto;
       }
 
       input{
-
         font-size: 18px;
       }
 
-      input[type="text"],input[type="password"] {
-        width: 250px;
-        height: 40px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
+      p{
+        margin-bottom: 20px;
       }
-button{
-  width: 200px;
-  height: 40px;
-  color: #ffffff;
-  border: none;
-  background: #194e91;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
 
-span{
-  font-size: 14px;
-}
+      a{
+        font-size: 14px;
+        color: #316fc0;
+      }
 
-.email input{width: 200px;}
+      input[type="text"],input[type="password"] {
+        height: 40px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
 
-.address input{
-  width: 270px;
-}
+      input[type="button"],button{
+        height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #ffffff;
+        border: none;
+        background: #194e91;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 14px;
+      }
 
-.address_search{
-  width: 270px;
-}
+      span{
+        font-size: 14px;
+        color: tomato;
+      }
 
-.join button{
-  width: 270px;
-}
+      .form_line{
+        align-items: center;
+        display: flex;
+      }
 
-select{
-  width: 100px;
-  height: 40px;
-}
+      .id_form{
+        margin-bottom: 0;
+      }
 
-.form_wrap{
-  position: relative;
-  width: 100%;
-}
-   
+      #id_check,#search_addr{
+        margin-left: 10px;
+      }
+
+      #addr{
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      select{
+        width: 100px;
+        height: 40px;
+      }
+
+      .email input{width: 200px;}
+
+      .join button{
+        width: 270px;
+      }
+
+      .form_wrap{
+        position: relative;
+        width: 100%;
+      }
     </style>
     <script>
       function join_form_check() {
@@ -98,54 +117,50 @@ select{
         const mobile = document.getElementById("mobile");
         const apply = document.getElementById("apply");
 
-        if( u_name.value == "" ){  // if( !u_name.value ){ // 입력하지 않았다면
-            // if( u_name.value != "" ){  // if( u_name.value ){ // 입력하였다면
-                alert("이름을 입력하세요.");
-                u_name.focus();
-                return false;
-            }
+        if( u_name.value == "" ){
+            alert("이름을 입력하세요.");
+            u_name.focus();
+            return false;
+        }
 
-            if( !u_id.value ){ 
-                alert("아이디를 입력하세요.");
-                u_id.focus();
-                return false;
-            }
-            let id_len = u_id.value.length;
-            if( id_len < 4 || id_len > 12 ){ 
-                alert("아이디는 4~12글자만 입력할 수 있습니다.");
-                u_id.focus();
-                return false;
-            }
+        if( !u_id.value ){ 
+            alert("아이디를 입력하세요.");
+            u_id.focus();
+            return false;
+        }
 
-            if( !pwd.value ){ 
-                alert("비밀번호를 입력하세요.");
-                pwd.focus();
-                return false;
-            }
-            let pwd_len = pwd.value.length;
-            if( pwd_len < 4 || pwd_len > 12 ){ 
-                alert("비밀번호는 4~8글자만 입력할 수 있습니다.");
-                pwd.focus();
-                return false;
-            }
+        let id_len = u_id.value.length;
+        if( id_len < 4 || id_len > 12 ){ 
+            alert("아이디는 4~12글자만 입력할 수 있습니다.");
+            u_id.focus();
+            return false;
+        }
 
-            if( pwd.value != repwd.value ){ 
-                alert("비밀번호를 확인해 주세요.");
-                repwd.focus();
-                return false;
-            }
+        if( !pwd.value ){ 
+            alert("비밀번호를 입력하세요.");
+            pwd.focus();
+            return false;
+        }
 
-        // const reg = /^[0-9]+$/g;
-        // 정규식 기본 표현 변수 = / 패턴 /플래그
-        // 실행 시 : 변수.test(테스트할 항목)
-        const reg = /^[0-9]{10,11}$/g; // { } 내부에 띄어쓰기 유의
-        // if( mobile.value ){ // 값이 있을 때에만 검사
+        let pwd_len = pwd.value.length;
+        if( pwd_len < 4 || pwd_len > 12 ){ 
+            alert("비밀번호는 4~8글자만 입력할 수 있습니다.");
+            pwd.focus();
+            return false;
+        }
+
+        if( pwd.value != repwd.value ){ 
+            alert("비밀번호를 확인해 주세요.");
+            repwd.focus();
+            return false;
+        }
+
+        const reg = /^[0-9]{10,11}$/g; 
         if (!reg.test(mobile.value)) {
           alert("전화번호는 숫자만 입력할 수 있습니다.");
           mobile.focus();
           return false;
         }
-        // }
 
         if (!apply.checked) {
           alert("약관동의가 필요합니다.");
@@ -154,44 +169,28 @@ select{
         }
       }
 
-      function change_email() {
-        // alert("TEST");
-        let email_dns = document.getElementById("email_dns");
-        let email_sel = document.getElementById("email_sel");
+      window.onload = function() {
+        const existingIds = JSON.parse(localStorage.getItem("existingIds")) || [];
+        localStorage.setItem("existingIds", JSON.stringify(existingIds));
+            };
 
-        let idx = email_sel.options.selectedIndex;
-        // console.log(idx);
-
-        // let selected = email_sel.options[1].value;
-        // let selected = email_sel.options[1].text;
-        let selected = email_sel.options[idx].value;
-        // console.log(selected);
-
-        email_dns.value = selected;
-
-        if (selected == "") {
-          email_dns.readOnly = false;
-          email_dns.focus();
-        } else {
-          email_dns.readOnly = true;
-        }
-      }
-
-      var check_num = 0;
-        function change_view(){
-            const pwd = document.getElementById("pwd");
-            const show_pwd = document.getElementById("show_pwd");
-
-            if(check_num == 0){
-                pwd.setAttribute("type", "text");
-                show_pwd.innerText = "비밀번호 감추기";
-                check_num = 1
-            } else {
-                pwd.setAttribute("type", "password");
-                show_pwd.innerText = "비밀번호 표시";
-                check_num = 0
+        function checkAndSaveId() {
+            const inputId = document.getElementById("u_id").value;
+            const existingIds = JSON.parse(localStorage.getItem("existingIds")) || [];
+            const idPattern = /^[a-zA-Z0-9]{4,12}$/;
+            if (!idPattern.test(inputId)) {
+                alert("아이디는 영문, 숫자 조합으로 4~12글자여야 합니다.");
+                return;
             }
-        } 
+            
+            if (existingIds.includes(inputId)) {
+                alert("이미 사용 중인 아이디입니다.");
+            } else {
+                existingIds.push(inputId);
+                localStorage.setItem("existingIds", JSON.stringify(existingIds));
+                alert("사용 가능한 아이디입니다.");
+            }
+        }
 
         var check_num = 0;
         function change_view2(){
@@ -209,108 +208,142 @@ select{
             }
         } 
 
-      function search_id() {
-        // window.open("팝업될 문서의 URL", "팝업된 문서의 이름", "옵션(위치, 크기, bar 표시 등)")
-        window.open(
-          "id_check.html",
-          "a",
-          "width=600, height=400, left=0, top=0"
-        );
+      function change_email() {
+        // alert("TEST");
+        let email_dns = document.getElementById("email_dns");
+        let email_sel = document.getElementById("email_sel");
+
+        let idx = email_sel.options.selectedIndex;
+        let selected = email_sel.options[idx].value;
+
+        email_dns.value = selected;
+
+        if (selected == "") {
+          email_dns.readOnly = false;
+          email_dns.focus();
+        } else {
+          email_dns.readOnly = true;
+        }
       }
+      
       function search_addr() {
-        window.open(
-          "addr_search.html",
-          "b",
-          "width=600, height=600, left=0, top=0"
-        );
-      }
-    </script>
+        new daum.Postcode({
+            oncomplete: function(data) {
+                var addr = ''; 
+                var extraAddr = ''; 
+               
+                if (data.userSelectedType === 'R') { 
+                    addr = data.roadAddress;
+                } else { 
+                    addr = data.jibunAddress;
+                }
+              
+                if(data.userSelectedType === 'R'){
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                   
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                   
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    
+                    document.getElementById("refer_addr").value = extraAddr;
+                
+                } else {
+                    document.getElementById("refer_addr").value = '';
+                }
+                
+                document.getElementById('postalcode').value = data.zonecode;
+                document.getElementById("addr").value = addr;
+                document.getElementById("detail_addr").focus();
+            }
+        }).open();
+    }
+  </script>
   </head>
   <body>
-   <h1><a href="../index.html"><img src="images/logo.jpg" alt=""></a></h1>
+    <h1><a href="../../index.html"><img src="images/logo.jpg" alt=""></a></h1>
+    <div class="form_wrap">
+    <div class="form_box">
+      <form
+        name="join_form"
+        action="insert.php"
+        method="get"
+        onsubmit="return join_form_check()"
+      >
+        <fieldset>
+          <legend>회원가입</legend>
+          <p class="box1">
+            <label for="u_name"></label>
+            <input type="text" name="u_name" id="u_name" placeholder="이름" />  
+          </p>
 
-<div class="form_wrap">
-  <div class="form_box">
-    <form
-      name="join_form"
-      action="insert.php"
-      method="get"
-      onsubmit="return join_form_check()"
-    >
-      <fieldset>
-        <legend>회원가입</legend>
-        <p class="box1">
-        <label for="u_name"></label>
-           
-            <input type="text" name="u_name" id="u_name" placeholder="이름" />
-          </label>
-        </p>
+          <p>
+            <label for="u_id"></label>
+            <p class="form_line id_form" >
+              <input type="text" name="u_id" id="u_id" placeholder="아이디"/>
+              <button type="button" id="id_check" onclick="checkAndSaveId()">아이디 중복 확인</button>
+            </p>  
+            <span>* 영문, 숫자 조합으로 4~12글자만 입력할 수 있습니다.</span>
+          </p>
 
-        <p>
-         <label for="u_id"></label> 
-          <!-- <input type="text" name="u_id" id="u_id" maxlength="12"> -->
-          <input type="text" name="u_id" id="u_id" placeholder="아이디"/>
-          <br /><span>* 영문, 숫자 조합으로 4~12글자만 입력할 수 있습니다.</span>
-        <p>  <button type="button" class="id_check" onclick="search_id()">아이디 중복 확인</button>
-        </p>
-        </p>
+          <p>
+            <label for="pwd"></label>
+            <input type="password" name="pwd" id="pwd" placeholder="비밀번호"/>
+            <a href="#none" id="show_pwd" onclick="change_view()">비밀번호 표시</a> <br />
+            <span>* 4~8글자만 입력할 수 있습니다.</span>
+          </p>
 
-        <p>
-          <label for="pwd"></label>
-          <input type="password" name="pwd" id="pwd" placeholder="비밀번호"/>
-          <a href="#none" id="show_pwd" onclick="change_view()">비밀번호 표시</a>
-          <br /><span>* 4~8글자만 입력할 수 있습니다.</span>
-        </p>
+          <p>
+            <label for="repwd"></label>
+            <input type="password" name="repwd" id="repwd" placeholder="비밀번호 확인"/>
+            <a href="#none" id="re_pwd" onclick="change_view2()" >비밀번호 표시</a>
+          </p>
 
-        <p>
-          <label for="repwd"></label>
-          <input type="password" name="repwd" id="repwd" placeholder="비밀번호 확인"/>
-          <a href="#none" id="re_pwd" onclick="change_view2()">비밀번호 표시</a>
-        </p>
+          <p>
+            <label for="mobile"></label>
+            <input type="text" name="mobile" id="mobile" placeholder="전화번호 입력"/> <br />
+            <span>* "-" 없이 숫자만 입력하세요.</span>
+          </p>
 
-        <p>
-          <label for="mobile"></label>
-          <input type="text" name="mobile" id="mobile" placeholder="전화번호 입력"/>
-          <br /><span>"-" 없이 숫자만 입력</span>
-        </p>
+          <p class="email">
+            <label for="email_id"></label>
+            <input type="text" name="email_id" id="email_id" placeholder="이메일 입력"/> @
+            <input type="text" name="email_dns" id="email_dns" />
+            <select name="email_sel" id="email_sel" onchange="change_email()">
+              <option value="">직접 입력</option>
+              <option value="naver.com">네이버</option>
+              <option value="hanmail.net">다음</option>
+              <option value="gmail.com">구글</option>
+            </select>
+          </p>
 
-        <p class="email">
-          <label for="email_id"></label>
-          <input type="text" name="email_id" id="email_id" placeholder="이메일 입력"/> @
-          <input type="text" name="email_dns" id="email_dns" />
-          <select name="email_sel" id="email_sel" onchange="change_email()">
-            <option value="">직접 입력</option>
-            <option value="naver.com">네이버</option>
-            <option value="hanmail.net">다음</option>
-            <option value="gmail.com">구글</option>
-          </select>
-        </p>
+          <p class="address">
+            <label for="postalcode"></label>
+            <p class="form_line">
+            <input type="text" id="postalcode" placeholder="우편번호">
+            <input type="button" id="search_addr" onclick="search_addr()" value="우편번호 찾기"></p>
+            <input type="text" id="addr" placeholder="주소"> <br>
+            <input type="text" id="detail_addr" placeholder="상세주소">
+            <input type="text" id="refer_addr" placeholder="참고항목">
+          </p>
 
+          <p>
+            <input type="checkbox" name="apply" id="apply" value="y" />
+            약관 동의
+          </p>
 
-
-        <p class="address">
-          <label for="postalCode"></label>
-          <input type="text" name="postalCode" id="postalCode" placeholder="주소 입력" />
-          <button type="button" class="address_search" onclick="search_addr()">우편번호 검색</button
-          ><br />
-          <label for="b_addr">기본 주소</label>
-          <input type="text" name="b_addr" id="b_addr" /><br />
-          <label for="d_addr">상세 주소</label>
-          <input type="text" name="d_addr" id="d_addr" />
-        </p>
-
-        <p>
-          <input type="checkbox" name="apply" id="apply" value="y" />
-          약관 동의
-        </p>
-
-        <p class="join">
-          <button type="submit">회원가입</button>
-          <button type="button">돌아가기</button>
-        </p>
-      </fieldset>
-    </form>
+          <p class="join">
+            <button type="submit">회원가입</button>
+            <button type="button">돌아가기</button>
+          </p>
+        </fieldset>
+      </form>
+    </div>
   </div>
-</div>
   </body>
 </html>
