@@ -1,0 +1,119 @@
+
+
+
+.side_menu01_open {
+  display: none;
+}
+
+.main_wrap {
+  width: 1200px;
+  margin: auto;
+  height: 1630px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.sub_section_wrap .report_wrap img {
+  margin: 0 auto;
+}
+
+section {
+  width: 930px;
+}
+
+.section_wrap {
+  width: 930px;
+
+  margin: auto;
+}
+
+.depth1 {
+  background: #084f8c;
+  color: #fff;
+}
+
+.section_wrap h2 {
+  margin-bottom: 30px;
+}
+
+.report_wrap {
+  margin-top: 50px;
+}
+
+.report_wrap p {
+  font-size: 22px;
+  color: #084f8c;
+  margin-bottom: 30px;
+}
+
+.report_box {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.report_flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.report_box a {
+  position: relative;
+  width: 172px;
+  height: 142px;
+  display: inline-block;
+}
+
+.report_box a img {
+  border: 1px solid #d8d8d8;
+  width: 112px;
+  height: 152px;
+}
+
+.report_box a img:hover{
+  box-shadow: 5px 5px 5px 0px #c4c4c4;
+}
+
+.report_box ul {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  color: #084f8c;
+}
+
+.report_box ul li:first-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.report_box ul li:last-child {
+  font-size: 12px;
+}
+
+.report_wrap .report_box .txt_5 {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  color: #084f8c;
+}
+
+.report_wrap .report_box .txt_7 {
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  color: #084f8c;
+}
+
+.report_wrap .report_box .txt_10 {
+  position: absolute;
+  top: 23px;
+  left: 34px;
+  color: #084f8c;
+}
+
+.pdf {
+  position: absolute;
+  right: 0;
+}

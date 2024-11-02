@@ -1,0 +1,36 @@
+
+.main_wrap {
+    width: 1200px;
+    margin: auto;
+    height: 2000px;
+    position: relative;
+    z-index: 2;
+    display:flex;
+}
+.side_menu01_open, .side_menu02_open{
+    display:none
+}
+.first_text{
+    color: #194e91;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.highlight{
+    color: #194e91;
+}
+.name_size{
+    font-size: 18px;
+    font-weight: bold;
+}
+.maeil_introduce_page{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #eef8fd;
+    border-radius: 20px;
+    line-height: 1.8;
+}
+.maeil_introduce_page img{
+    border-radius: 20px;
+    margin:0 auto 30px;
+}

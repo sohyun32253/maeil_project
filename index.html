@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 &vert; 매일유업</title>
+    <link rel="icon" href="images/main_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/fullPage.js-master/fullPage.js-master/src/js/fullpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script> 
+</head>
+<body>
+    <div class="wrap">
+        <header id="header">
+            <div class="skip_menu">
+                <h3>바로가기 메뉴</h3>
+                <a href="#none">본문 바로가기</a>
+                <a href="#none">주메뉴 바로가기</a>
+                <a href="#none">하단메뉴 바로가기</a>
+            </div>
+
+            <div class="header_top">
+                <div class="family_site_header">
+                    <h3 class="hide">계열사 사이트</h3>
+                    <ul>
+                        <li><a href="#none">매일아이</a></li>
+                        <li>&nbsp;&vert;&nbsp;</li>
+                        <li><a href="#none">공식몰</a></li>
+                        <li>&nbsp;&vert;&nbsp;</li>
+                        <li><a href="#none">Maeil Do</a></li>
+                    </ul>
+                </div>
+        
+                <div class="util_menu">
+                    <h3 class="hide">유용한 메뉴</h3>
+                    <ul>
+                        <li class="util_menu01"><a href="#none"><img src="images/employ.png" alt="">인재채용</a></li>
+                        <li class="util_menu02"><a href="sub_page/customer_center/customer_contact.html"><img src="images/customer_center.png" alt="">고객센터</a></li>
+                        <li class="util_menu03"><a href="sub_page/log_in/log_in/log_in.html"><img src="images/login.png" alt="">로그인</a></li>
+                        <li id="search_icon" class="util_menu04"><a href="#none"><img src="images/search.png" alt="">검색</a></li>
+                    </ul>
+                </div>
+                <div id="search_bar" class="search_bar hidden">
+                    <input type="text">
+                    <a href="#"><img src="images/search.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="header_bottom">
+                <h1 class="logo"><a href="/index.html"><img src="images/logo.png" alt="매일유업"></a></h1>
+                <nav class="gnb">
+                    <h2 class="hide">주요메뉴</h2>
+                    <ul>
+                        <li class="menu01"><a href="#none"><span class="spread_underline">회사소개</span></a>
+                            <div>
+                                <ul>
+                                    <li>회사소개</li>
+                                    <li><a href="sub_page/introduce/maeil_introduce.html">기업소개</a></li>
+                                    <li><a href="sub_page/introduce/maeil_introduce_hello.html">인사말</a></li>
+                                    <li><a href="#none">히스토리</a></li>
+                                    <li><a href="sub_page/introduce/maeil_introduce_map_location_1.html">오시는 길</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu02"><a href="#none"><span class="spread_underline">브랜드</span></a>
+                            <div>
+                                <ul>
+                                    <li>브랜드</li>
+                                    <li><a href="sub_page/brand/maeil_brand_milk_yogurt_cheese.html">우유 &centerdot; 발효유 &centerdot; 치즈</a></li>
+                                    <li><a href="sub_page/brand/maeil_brand_grain.html">두유 &centerdot; 아몬드 &centerdot; 오트</a></li>
+                                    <li><a href="sub_page/brand/maeil_brand_juice_coffee_tea.html">주스 &centerdot; 커피 &centerdot; Tea</a></li>
+                                    <li><a href="sub_page/brand/maeil_brand_babyfood_babysnack.html">영유아식 &centerdot; 아이간식</a></li>
+                                    <li><a href="sub_page/brand/maeil_brand_simple.html">간편식</a></li>
+                                    <li><a href="sub_page/brand/maeil_brand_health.html">건강식</a></li>
+                                    <li><a href="sub_page/brand/maeil_brand_dessert.html">디저트</a></li>
+                                    <li><a href="sub_page/brand/maeil_brand_yoo_drink_base.html">유지류/음료</a></li>
+                                    <li><a href="sub_page/brand/maeil_brand_global.html">수 &centerdot; 출입 상품</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu03"><a href="#none"><span class="spread_underline">사회공헌</span></a>
+                            <div>
+                                <ul>
+                                    <li>사회공헌</li>
+                                    <li><a href="sub_page/social_contribution/social_intro.html">사회공헌 소개</a></li>
+                                    <li><a href="sub_page/social_contribution/give_birth_rate.html">나눔 활동</a></li>
+                                    <li><a href="#none">사회공헌 연혁</a></li>
+                                    <li><a href="sub_page/social_contribution/social_news.html">나눔소식</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu04"><a href="#none"><span class="spread_underline">상생 &centerdot; 윤리경영</span></a>
+                            <div>
+                                <ul>
+                                    <li>상생 &centerdot; 윤리경영</li>
+                                    <li><a href="sub_page/management/win_win.html">상생경영</a></li>
+                                    <li><a href="sub_page/management/ethical.html">윤리경영</a></li>
+                                    <li><a href="#none">가족친화 경영</a></li>
+                                    <li><a href="#none">매일유업 동반성장</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu05"><a href="#none"><span class="spread_underline">IR</span></a>
+                            <div>
+                                <ul>
+                                    <li>IR</li>
+                                    <li><a href="sub_page/IR/경영정보.html">경영정보</a></li>
+                                    <li><a href="sub_page/IR/요약재무정보.html">재무정보</a></li>
+                                    <li><a href="sub_page/IR/사업보고서.html">공시정보</a></li>
+                                    <li><a href="sub_page/IR/IR자료실.html">IR 자료실</a></li>
+                                    <li><a href="sub_page/IR/공고.html">공고</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu06"><a href="#none"><span class="spread_underline">PR</span></a>
+                            <div>
+                                <ul>
+                                    <li>PR</li>
+                                    <li><a href="sub_page/PR/공지사항.html">공지사항</a></li>
+                                    <li><a href="sub_page/PR/인쇄광고.html">광고</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu07"><a href="#none"><span class="spread_underline">ESG 정보 공개</span></a>
+                            <div>
+                                <ul>
+                                    <li>ESG 정보 공개</li>
+                                    <li><a href="#none">ESG 정보 공개</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#none" class="all_menu"><img src="images/hamburger.png" alt="전체메뉴"></a>
+            </div>
+            <div class="nav_bg"></div>
+        </header>
+        <main class="main" id="main">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/main_01.png" alt="" class="main_img">
+                    <div class="main01_cont">
+                        <img src="images/More_than_food.png" alt="More than food">
+                        <img src="images/Beyond.png" alt="Beyond">
+                        <img src="images/Korea.png" alt="Korea">
+                        <p>새로운 식문화를 창조하며 글로벌로 나아갑니다&#46;</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main_02.png" alt="" class="main_img">
+                    <div class="main02_cont">
+                        <div>
+                            <img src="images/함께.png" alt="함께">
+                            <img src="images/나누는.png" alt="나누는">
+                            <img src="images/매일.png" alt="매일">
+                        </div>
+                        <p>단 한 명의 아이도 건강한 삶에서 소외되지 않도록<br>한국 최초 8종 10개 제품의 특수 분유를 만들었습니다&#46;</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main_03.png" alt="" class="main_img">
+                    <div class="main03_cont">
+                        <div>
+                            <img src="images/글로벌.png" alt="글로벌">
+                            <img src="images/매일.png" alt="매일">
+                        </div>
+                        <p>1981년 첫 수출 이후 약 200여개국에 우수한 품질의<br>유제품을 공급&#44; 글로벌 식품회사로 인정받고 있습니다&#46;</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/main_04.png" alt="" class="main_img">
+                    <div class="main04_cont">
+                        <div>
+                            <img src="images/약속.png" alt="1&#37;의 약속">
+                        </div>
+                        <p>매일유업 소화가 잘되는 우유는 판매액의 1&#37;를<br>어르신의 안부를 묻는 우유배달에 기부하고 있습니다&#46;</p>
+                    </div>
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="play-pause-button">
+                    <img src="images/play.png" alt="Play" id="playPauseButton">
+                </div>
+            </div>
+            <h2 class="hide">기업소개/윤리경영</h2>
+        <section class="intro_section">
+        <section class="intro_section2">
+        
+        <div class="intro_section_wrap">
+            <img src="images/매일묻고매일답하다.jpg" alt="매일묻고매일답하다" />
+            <div class="box_wrap">
+            <div class="box">
+            <p><img src="images/맛.png" alt="맛"></p>
+            <p><img src="images/멋.png" alt="멋"></p>
+            <p><img src="images/혁신.png" alt="혁신"></p>
+            <p><img src="images/신뢰.png" alt="신뢰"></p>
+        </div>
+        </div>
+        <p>
+            매일은 유제품을 통해 국민의 건강한 삶을 만듭니다&#46; <br />
+            이러한 창업정신은 오늘까지 이어져<br />
+            매일 묻고 답하는 자세로 노력하고 있습니다&#46; <br />
+        </p>
+        <div class="intro_image_wrap">
+        <div class="intro_image">
+            <p><a href="#none"><img src="images/기업소개_img_01.jpg"  alt=""/></a></p>
+            <p><a href="#none"><img src="images/기업소개_img_02.jpg" alt=""/></a></p>
+            <p><a href="#none"><img src="images/기업소개_img_03.jpg"  alt=""/></a></p>
+        </div>
+        </div>
+        </div>
+    </section>
+    </section>
+
+        <!-- 사회공헌 -->
+        <h2 class="hide">사회공헌</h2>
+        <section class="social_section">
+        <div class="social_section_wrap">
+            <img
+            src="images/전문성과지속성을....png"
+            alt="전문성과진정성을가지고지속적으로"
+            />
+
+            <div class="social_image">
+            <p><img src="images/전문성.png" alt="전문성" /></p>
+            <p><img src="images/진정성.png" alt="진정성" /></p>
+            <p><img src="images/지속성.png" alt="지속성" /></p>
+            </div>
+
+            <div class="social_txt">
+            <p>
+                매일유업은 업&#40;業&#41;의 특성을 살려<br />
+                국내에서 유일하게 선천성대사이상 환아들을 위한<br />
+                특수분유를 생산&#44; 공급하고 있습니다&#46;
+            </p>
+            <p>
+                엄마의 모유조차 먹지 못하는 아이들을 위해 <br />
+                매일유업은 소수의 선천성대사이상 환아들을 위한<br />
+                특수분유 8종 12개의 제품을 생산하고 있습니다&#46;
+            </p>
+            <p>
+                1969년 낙농보국의 정신으로 시작한 매일유업은 <br />
+                고객과 함께하는 세상을 생각하며 <br />
+                지속 가능한 경영을 실천하고 있습니다&#46;
+            </p>
+            </div>
+        </div>
+        </section>
+
+        <!-- product -->
+        <h2 class="hide">PRODUCT</h2>
+        <section class="product_section">
+        <div class="product_box">
+            <img src="images/PRODUCT.png" alt="product" />
+            <p><img src="images/product_가운데띠.png" alt=""></p>
+            <p class="txt_mb">매일의 다양한 상품을 만나보세요&#46;</p>
+            <div class="product_wrap">
+            
+                <ul>
+                <li>
+                <a href="https://direct.maeil.com/product/productList.do?categoryCode=200000&subCategory=001&pageIndex=1&productType=delivery&searchOrder=">
+                <img src="images/product_01.png" alt="maeil" />우유
+                </a>
+                </li>
+                <li>
+                    <a href="https://direct.maeil.com/product/productList.do?categoryCode=200000&subCategory=002&pageIndex=1&productType=delivery&searchOrder=">
+                    <img src="images/product_02.png" alt="maeil" />발효유
+                    </a>
+                </li>
+                <li>
+                <a href="https://direct.maeil.com/product/productList.do?categoryCode=200000&subCategory=003&pageIndex=1&productType=delivery&searchOrder=">
+                <img src="images/product_03.png" alt="maeil" />치즈
+                </a>
+                </li>
+                <li>
+                <a href="https://direct.maeil.com/product/productList.do?categoryCode=400000&subCategory=001">
+                <img src="images/product_04.png" alt="maeil" />주스
+                </a>
+                </li>
+                <li>
+                <a href="https://direct.maeil.com/product/productList.do?categoryCode=400000&subCategory=002&pageIndex=1&productType=delivery&searchOrder=">
+                <img src="images/product_05.png" alt="maeil" />커피 · Tea
+                </a>
+                </li>
+            
+                <li>
+                <a href="https://direct.maeil.com/product/productList.do?categoryCode=300000">
+                <img src="images/product_06.png" alt="maeil" />곡물
+                </a>    
+                </li>
+            
+                <li>
+                <a href="https://direct.maeil.com/product/productList.do?categoryCode=500000&subCategory=001&pageIndex=1&productType=delivery&searchOrder=">
+                <img src="images/product_07.png" alt="maeil" />유아식
+                </a>   
+                </li>
+                
+                <li>
+                <a href="https://direct.maeil.com/product/productList.do?categoryCode=700000">
+                <img src="images/product_08.png" alt="maeil" />건강식
+                </a>
+                </li>
+                <li>
+                    <a href="https://direct.maeil.com/product/productList.do?categoryCode=600000">
+                    <img src="images/product_09.png" alt="maeil" />간편식
+                    </a>
+                </li>
+                <li>
+                <a href="https://direct.maeil.com/product/productList.do?categoryCode=500000&subCategory=002&pageIndex=1&productType=delivery&searchOrder=">
+                <img src="images/product_10.png" alt="maeil" />아이간식
+                </a>
+                </li>
+                <li>
+                    <a href="https://direct.maeil.com/product/productList.do?categoryCode=800000">
+                    <img src="images/product_11.png" alt="maeil" />디저트
+                </a>
+                </li>
+                <li>
+                <a href="#none" class="not_ready"><img src="images/product_12.png" alt="maeil" />유지류/음료베이스</a>
+                </li>
+                </ul>
+            
+            </div>
+            <div class="pager">
+            <p class="before">
+                <a href="#none"
+                ><img src="images/arrow_left.png" alt="이전으로"
+                /></a>
+            </p>
+            <p class="next">
+                <a href="#none"
+                ><img src="images/arrow_left.png" alt="다음으로"
+                /></a>
+            </p>
+            </div>
+        </div>
+        </section>
+        <!-- 브랜드 shop -->
+        <h2 class="hide">BRANDSHOP</h2>
+        <section class="brand_section">
+        <div class="brand_wrap">
+            <img src="images/브랜드-SHOP.png" alt="product" />
+            <p><img src="images/brand_가운데띠.png" alt=""></p>
+            <p class="txt_mb">브랜드로 만나는 매일</p>
+            <div class="brand_logo_wrap">
+            <div class="brand_image">
+            <p><a href="sub_page/brand/maeil_brand_milk_yogurt_cheese.html" target="_blank"><img src="images/brand_01.jpg" alt="매일우유" /></a></p>
+            <p><a href="sub_page/brand/maeil_brand_milk_yogurt_cheese.html" target="_blank"><img src="images/brand_02.jpg" alt="매일바이오" /></a></p>
+            <p><a href="sub_page/brand/maeil_brand_milk_yogurt_cheese.html" target="_blank"><img src="images/brand_03.jpeg" alt="상하치즈" /></a></p>
+            <p><a href="sub_page/brand/maeil_brand_juice_coffee_tea.html" target="_blank"><img src="images/brand_04.jpg" alt="썬업" /></a></p>
+            <p><a href="sub_page/brand/maeil_brand_juice_coffee_tea.html" target="_blank"><img src="images/brand_05.jpg" alt="바리스타룰스" /></a></p>
+            <p><a href="sub_page/brand/maeil_brand_grain.html" target="_blank"><img src="images/brand_06.jpeg" alt="매일두유" /></a></p>
+            <p><a href="sub_page/brand/maeil_brand_babyfood_babysnack.html"><img src="images/brand_07.jpg" alt="앱솔루트" /></a></p>
+            </div>
+            <div class="all_view">
+            <a href="sub_page/brand/maeil_brand_milk_yogurt_cheese.html">전체보기<img src="images/arrow_white.svg" alt="전체보기"/></a>
+            </div>
+            </div>
+        </div>
+        </section>
+        <section class="notice_customer_wrap">
+        <div class="notice_customer_bg">
+            <div class="notice_customer">
+                <div class="notice">
+                <h2><img src="images/공지사항.png" alt="공지사항"></h2>
+                <div class="notice_box">
+                <ul>
+                    <li><a href="#none"><span class="notice_cont">&#91;공지&#93; 식품 소비의 새로운 기준 &#39;소비기한&#39;</span><span class="notice_date">2024.04.25</span></a></li>
+                    <li><a href="#none"><span class="notice_cont">&#91;공지&#93; 매일유업 이용약관&#40;23.11.22&#41; 및 개인정보 처리방침&#40;23.11.15&#41; 개정 공지</span><span class="notice_date">2023&#46;11&#46;08</span></a></li>
+                    <li><a href="#none"><span class="notice_cont">&#91;공지&#93; 개인정보 처리방침 개정 공지</span><span class="notice_date">2023&#46;06&#46;26</span></a></li>
+                    <li><a href="#none"><span class="notice_cont">&#91;공지&#93; 개인정보 처리방침 개정 공지</span><span class="notice_date">2023&#46;05&#46;15</span></a></li>
+                </ul>
+                <a href="sub_page/PR/공지사항.html" target="_blank"><img class="notice_more" src="images/공지사항_더보기.png" alt="공지사항 더보기"></a>
+                </div>
+            </div>
+        <div class="customer">
+        <h2><img src="images/고객문의.png" alt="고객문의"></h2>
+        <div class="customer_box">
+            <img class="customer_text" src="images/고객문의_텍스트.png" alt="매일유업은 고객님을 위한 제품을 만들기 위해 항상 귀 기울이고 있습니다&#46; 문의에 대한 답변은 기재하신 이메일로 발송됩니다&#46;">
+            <a  href="sub_page/customer_center/customer_contact.html"><img class="customer_go" src="images/go.png" alt="" width="50" height="50"></a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class="instagram_wrap">
+        <div class="instagram_box">
+        <div class="instagram">
+            <h2><img src="images/INSTAGRAM.png" alt="인스타그램"></h2>
+            <ul>
+            <li><a href="https://www.instagram.com/p/C8Vs9PjBLbE/?utm_source=ig_web_copy_link" target="_blank"><img src="images/인스타그램1.png" alt="new 매일 바이오 요거트 파르페 인스타그램 게시글 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/p/C75S881v2ws/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="images/인스타그램2.png" alt="인간과 자연을 생각한 &#39;오트&#39;로 지속가능성을 맛보다 어메이징 오트 바리스타 그리고 매일 휘핑크림 비건오트 비건 리치 오트 에스프레소 음료 매일 두유 인스타그램 게시글 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/p/C8Vs0bJB5Dk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="images/인스타그램3.png" alt="new 매일 카페라테 파르페 인스타그램 게시글 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/p/C8Y8l2_Rfew/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="images/인스타그램4.png" alt="상하목장 유기농 주스 인스타그램 게시글 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/p/C8bkoCNxbos/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="images/인스타그램5.png" alt="입안에서 사르르~ 칼슘&#44; dna 함유 과자 요미요미 미니팝 서포터즈 모집 인스타그램 게시글 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/p/C8BsCmgPo0i/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="images/인스타그램6.png" alt="new 매일우유 옥수수 크림빵 인스타그램 게시글 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/p/C8bRT8ZysqQ/?utm_source=ig_web_copy_link" target="_blank"><img src="images/인스타그램7.png" alt="매일 셀렉스 레귤러 걸 인스타그램 게시글 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/p/C8lcwqfpruW/?utm_source=ig_web_copy_link" target="_blank"><img src="images/인스타그램8.png" alt="매일 앱솔루트 우리 아기 꿀잠비결 센서티브 꿀잠박스 이벤트 인스타그램 게시글 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/p/C8nqynbSz9k/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="images/인스타그램9.png" alt="매일 피크닉 제로 인스타그램 게시글 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/p/C8lscndv_fK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="images/인스타그램10.png" alt="매일 상하목장 하트바이트 아이스크림 인스타그램 게시글 바로가기"></a></li>
+
+            </ul>
+            <img class="insta_prev" src="images/arrow_left.png" alt="이전페이지">
+            <img class="insta_next" src="images/arrow_left.png" alt="다음페이지">
+            </div>
+        </div>
+    </section>
+        </main>
+        <div class="top_button_wrap">
+            <div class="top_button">
+                <a href="#"><img src="images/TOP1.png" alt="위로가기">  
+                </a>
+                </div>
+                </div>
+                <footer class="maeil_footer">
+                    <div class="footer_bg">
+                        <div class="footer_wrap">
+                        <div class="contact_us">
+                            <h3>Contact Us</h3>
+                            <img class="tel" src="images/tel.png" alt="1588-1539">
+                            <p>새로운 식문화를 창조해 가는 글로벌 리더 매일유업</p>
+                            <p class="maeil_map_footer"><a href="sub_page/introduce/maeil_introduce_map_location_1.html">매일유업 오시는 길</a></p>
+                        </div> 
+                
+                
+                        <div class="sns">
+                        <h3>SNS</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/freshmaeil/" target="_blank"><img src="images/instagram_footer.png" alt="인스타그램 바로가기"></a></li>
+                            <li><a href="https://www.facebook.com/maeili" target="_blank"><img src="images/facebook.png" alt="페이스북 바로가기"></a></li>
+                            <li><a href="https://www.youtube.com/user/maeili2mo" target="_blank"><img src="images/youtube.png" alt="유튜브 바로가기"></a></li>
+                            <li><a href="https://post.naver.com/my.nhn?memberNo=10582084" target="_blank"><img src="images/naver.png" alt="네이버 포스트 바로가기"></a></li>
+                        </ul>
+                        </div>
+                        
+                        <div class="family_site">
+                        <h3>패밀리 사이트<img src="images/arrow_white.svg" alt=""></h3>
+                        <ul class="family_site_option">
+                            <li><a href="#none">매일홀딩스</a></li>
+                            <li><a href="#none">매일헬스뉴트리션</a></li>
+                            <li><a href="#none">제로투세븐</a></li>
+                            <li><a href="#none">상하농원</a></li>
+                            <li><a href="#none">엠즈씨드(폴바셋)</a></li>
+                            <li><a href="#none">크리스탈제이드</a></li>
+                            <li><a href="#none">엠즈씨드(더 키친 일뽀르노)</a></li>
+                            <li><a href="#none">엠즈베버리지</a></li>
+                            <li><a href="#none">엠즈푸드시스템</a></li>
+                            <li><a href="#none">엠즈파트너스</a></li>
+                            <li><a href="#none">레뱅드매일</a></li>
+                            <li><a href="#none">엠디웰</a></li>
+                            <li><a href="#none">엠즈베이커스</a></li>
+                            <li><a href="#none">매일오더</a></li>
+                        </ul>
+                        </div>
+                
+                        <div class="agreement_address_wrap">
+                            <div class="agreement">
+                            <a href="#none">개인정보 처리방침 <img src="images/line.png" alt=""></a>
+                            <a href="#none">이용약관 <img src="images/line.png" alt=""></a>
+                            <a href="#none">전자입찰(협력사용)</a>
+                            <a href="#none">인재채용</a>
+                            </div>
+                            <address>서울시 종로구 종로 1길 50 더 케이 트윈타워 A동 대표전화 : 1588-1539</address>
+                            </div>
+                        </div>
+                    </div>
+                    </footer>
+    </div>
+</body>
+</html>

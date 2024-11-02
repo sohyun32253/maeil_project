@@ -1,0 +1,152 @@
+
+.side_menu01_open {
+  display: none;
+}
+.side_menu02_open {
+  display: none;
+}
+
+.main_wrap {
+  width: 1200px;
+  margin: auto;
+  height: 1580px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.sub_section_wrap .report_wrap img {
+  margin: 0 auto;
+}
+
+section {
+  width: 930px;
+}
+
+.section_wrap {
+  width: 930px;
+  position: relative;
+}
+
+table {
+  width: 930px;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+caption {
+  display: none;
+}
+
+th,
+td {
+  height: 45px;
+}
+
+thead {
+  background: #194e91;
+  color: #ffffff;
+}
+
+th,
+td {
+  border-bottom: 1px solid #dadada;
+}
+
+tbody {
+  color: #313131;
+}
+
+tbody th{
+  width: 70px;
+}
+
+tbody tr{
+  height: 55px;
+}
+
+tbody tr > th + td {
+  text-align: left;
+}
+
+tbody tr > th + td:hover{
+  text-decoration: underline;
+}
+
+.pager {
+  position: absolute;
+  right: 440px;
+  display: flex;
+  margin: auto;
+}
+
+.pager > a {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pager > a:first-child {
+  background: #194e91;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+form {
+  position: absolute;
+  right: 0;
+  top: 75px;
+  display: flex;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+form select {
+  height: 36px;
+  margin-right: 5px;
+  padding: 0 10px 0 5px;
+  font-size: 15px;
+}
+
+form .input_txt {
+  width: 190px;
+  height: 36px;
+  padding-left: 7px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 36px;
+  height: 36px;
+  background: #194e91;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+form img {
+  width: 26px;
+}
+
+form .search {
+  position: relative;
+}
+
+.depth1 {
+  background: #084f8c;
+  color: #fff;
+}
+
+.section_wrap h2 {
+  margin-bottom: 30px;
+}
+
+.section_wrap > .intro_txt {
+  margin-bottom: 76px;
+}

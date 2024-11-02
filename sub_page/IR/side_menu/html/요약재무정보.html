@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sidemenu</title>
+    <link rel="stylesheet" href="../css/요약재무정보.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script type="text/javascript" src="../js/side_menu.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="skip_menu">
+        <h3>바로가기 메뉴</h3>
+        <a href="#none">본문 바로가기</a>
+        <a href="#none">주메뉴 바로가기</a>
+        <a href="#none">하단메뉴 바로가기</a>
+      </div>
+
+      <div class="header_top">
+        <div class="family_site_header">
+          <h3 class="hide">계열사 사이트</h3>
+          <ul>
+            <li><a href="#none">매일아이</a></li>
+            <li>&nbsp;&vert;&nbsp;</li>
+            <li><a href="#none">공식몰</a></li>
+            <li>&nbsp;&vert;&nbsp;</li>
+            <li><a href="#none">Maeil Do</a></li>
+          </ul>
+        </div>
+
+        <div class="util_menu">
+          <h3 class="hide">유용한 메뉴</h3>
+          <ul>
+            <li class="util_menu01">
+              <a href="#none"
+                ><img src="../images/employ.png" alt="" />인재채용</a
+              >
+            </li>
+            <li class="util_menu02">
+              <a href="#none"
+                ><img src="../images/customer_center.png" alt="" />고객센터</a
+              >
+            </li>
+            <li class="util_menu03">
+              <a href="#none"><img src="../images/login.png" alt="" />로그인</a>
+            </li>
+            <li class="util_menu04">
+              <a href="#none"><img src="../images/search.png" alt="" />검색</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header_bottom">
+        <h1 class="logo">
+          <a href="#none"><img src="../images/logo.png" alt="매일유업" /></a>
+        </h1>
+        <nav class="gnb">
+          <h2 class="hide">주요메뉴</h2>
+          <ul>
+            <li class="menu01">
+              <a href="#none">회사소개</a>
+              <div>
+                <ul>
+                  <li>회사소개</li>
+                  <li><a href="#none">기업소개</a></li>
+                  <li><a href="#none">가치체계</a></li>
+                  <li><a href="#none">인사말</a></li>
+                  <li><a href="#none">연구소</a></li>
+                  <li><a href="#none">공장</a></li>
+                  <li><a href="#none">글로벌사업</a></li>
+                  <li><a href="#none">오시는 길</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu02">
+              <a href="#none">브랜드</a>
+              <div>
+                <ul>
+                  <li>브랜드</li>
+                  <li>
+                    <a href="#none">우유 &centerdot; 발효유 &centerdot; 치즈</a>
+                  </li>
+                  <li>
+                    <a href="#none">두유 &centerdot; 아몬드 &centerdot; 오트</a>
+                  </li>
+                  <li>
+                    <a href="#none">주스 &centerdot; 커피 &centerdot; Tea</a>
+                  </li>
+                  <li><a href="#none">영유아식 &centerdot; 아이간식</a></li>
+                  <li><a href="#none">간편식</a></li>
+                  <li><a href="#none">건강식</a></li>
+                  <li><a href="#none">디저트</a></li>
+                  <li><a href="#none">유지류/음료</a></li>
+                  <li><a href="#none">수 &centerdot; 출입 상품</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu03">
+              <a href="#none">사회공헌</a>
+              <div>
+                <ul>
+                  <li>사회공헌</li>
+                  <li><a href="#none">사회공헌 소개</a></li>
+                  <li><a href="#none">나눔 활동</a></li>
+                  <li><a href="#none">사회공헌 연혁</a></li>
+                  <li><a href="#none">나눔소식</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu04">
+              <a href="#none">상생 &centerdot; 윤리경영</a>
+              <div>
+                <ul>
+                  <li>상생 &centerdot; 윤리경영</li>
+                  <li><a href="#none">상생경영</a></li>
+                  <li><a href="#none">윤리경영</a></li>
+                  <li><a href="#none">가족친화 경영</a></li>
+                  <li><a href="#none">매일유업 동반성장</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu05">
+              <a href="#none">IR</a>
+              <div>
+                <ul>
+                  <li>IR</li>
+                  <li><a href="#none">경영정보</a></li>
+                  <li><a href="#none">재무정보</a></li>
+                  <li><a href="#none">공시정보</a></li>
+                  <li><a href="#none">IR 자료실</a></li>
+                  <li><a href="#none">공고</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu06">
+              <a href="#none">PR</a>
+              <div>
+                <ul>
+                  <li>PR</li>
+                  <li><a href="#none">공지사항</a></li>
+                  <li><a href="#none">광고</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu07" i>
+              <a href="#none">ESG 정보 공개</a>
+              <div>
+                <ul>
+                  <li>ESG 정보 공개</li>
+                  <li><a href="#none">ESG 정보 공개</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <a href="#none" class="all_menu"
+          ><img src="../images/hamburger.png" alt="전체메뉴"
+        /></a>
+      </div>
+      <div class="nav_bg"></div>
+    </header>
+    <div class="real">
+      <div class="main_wrap">
+        <div class="side_menu">
+          <h3>IR</h3>
+          <ul>
+           
+            <li class="indv"><a href="#">경영정보</a></li>
+            <li class="li_wrap1">
+              <a href="#"
+                >재무정보<img
+                  class=".plus"
+                  src="../images/add_24.svg"
+                  alt=" 기업소개 펼치기" /><img
+                  class="minus"
+                  src="../images/remove_24.svg"
+                  alt="기업소개 접기"
+              /></a>
+              <ul class="financial_info">
+                <li class="indv"><a href="#">- 요약재무정보</a></li>
+                <li class="indv"><a href="#">- 재무상태표</a></li>
+                <li class="indv"><a href="#">- 손익계산서</a></li>
+                <li class="indv"><a href="#">- 현금흐름표</a></li>
+              </ul>
+            </li>
+            <li class="li_wrap2">
+              <a href="#"
+                >공시정보<img
+                  class=".plus"
+                  src="../images/add_24.svg"
+                  alt=" 기업소개 펼치기" /><img
+                  class="minus"
+                  src="../images/remove_24.svg"
+                  alt="기업소개 접기"
+              /></a>
+              <ul class="official_noctice">
+                <li class="indv"><a href="#">- 공시</a></li>
+                <li class="indv"><a href="#">- 사업보고서</a></li>
+                <li class="indv"><a href="#">- 감사보고서</a></li>
+              </ul>
+            </li> 
+
+            <li class="indv"><a href="#">IR 자료실</a></li>
+            <li class="indv"><a href="#">공고</a></li>
+          
+          
+          </ul>
+        </div>
+
+        <!-- 여기서부터 작업하세용 -->
+        <!-- 서브페이지 내용은 모두 sub_section_wrap안에 넣어주세요 -->
+        <div class="sub_section_wrap">
+          <!-- img 각자 바꾸기 -->
+          <img src="../images/IR.png" alt="IR" />
+
+          <!-- li 수정필요 -->
+          <ul class="sub_bar">
+            <li><a href="#none">경영정보</a></li>
+            <li><a href="#none">재무정보</a></li>
+            <li><a href="#none">공시정보</a></li>
+            <li><a href="#none">IR 자료실</a></li>
+            <li><a href="#none">공고</a></li>
+          </ul>
+          <!-- 지워도 돼용 -->
+           <section>
+            <div class="section_wrap">
+            <h2>요약재무정보</h2>
+            <img src="../images/logo.png" alt="maeil">
+            <p>매일유업주식회사</p>
+            <p class="posi_ab01">(단위 : 백만원)</p>
+            <table>
+             
+              <caption class="hide">매일유업 주식회사 요약재무정보</caption>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th colspan="2" scope="colgroup">2024.03.31</th>
+                  <th colspan="2" scope="colgroup">2023.12.31</th>
+                  <th colspan="2" scope="colgroup">2022.12.31</th>
+                </tr>
+
+                <tr>
+                  <th ></th>
+                  <th scope="col">연결</th>
+                  <th scope="col">별도</th>
+                  <th scope="col">연결</th>
+                  <th scope="col">별도</th>
+                  <th scope="col">연결</th>
+                  <th scope="col">별도</th>
+                </tr>
+              </thead>
+             
+
+              <tfoot>
+                <tr>
+                  <th scope="row">자산총계</th>
+                  <td>996,541</td>
+                  <td>1,025,356</td>
+                  <td>972,802</td>
+                  <td>1,004,139</td>
+                  <td>974,748</td>
+                  <td>991,841</td>
+                </tr>
+              </tfoot>
+
+
+              <tbody>
+                <tr>
+                  <th scope="row">유동자산</th>
+                  <td>633,951</td>
+                  <td>606,471</td>
+                  <td>604,125</td>
+                  <td>582,741</td>
+                  <td>599,958</td>
+                  <td>573,254</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">비유동자산</th>
+                  <td>362,590</td>
+                  <td>418,885</td>
+                  <td>368,677</td>
+                  <td>421,398</td>
+                  <td>374,790</td>
+                  <td>418,587</td>
+                </tr>
+              </tbody>
+
+
+            
+           <table>
+            <thead class="thead_hide">
+              <tr>
+                <th></th>
+                <th colspan="2" scope="colgroup">2024.03.31</th>
+                <th colspan="2" scope="colgroup">2023.12.31</th>
+                <th colspan="2" scope="colgroup">2022.12.31</th>
+              </tr>
+
+              <tr>
+                <th></th>
+                <th scope="col">연결</th>
+                <th scope="col">별도</th>
+                <th scope="col">연결</th>
+                <th scope="col">별도</th>
+                <th scope="col">연결</th>
+                <th scope="col">별도</th>
+              </tr>
+            </thead>
+
+
+            <tfoot> 
+              <tr>
+              <th scope="row">부채총계</th>
+              <td>450,367</td>
+              <td>439,176</td>
+              <td>432,716</td>
+              <td>426,189</td>
+              <td>477,925</td>
+              <td>469,217</td>
+            </tr>
+          </tfoot>
+           
+
+          <tbody>
+            <tr>
+              <th scope="row">유동부채</th>
+                <td>234,233</td>
+                <td>223,146</td>
+                <td>215,905</td>
+                <td>209,494</td>
+                <td>266,099</td>
+                <td>257,638</td>
+            </tr>
+            <tr>
+              <th scope="row">비유동부채</th>
+              <td>216,133</td>
+              <td>216,031</td>
+              <td>216,811</td>
+              <td>216,695</td>
+              <td>211,825</td>
+              <td>211,579</td>
+            </tr>
+          </tbody>
+        </table>
+              
+    
+
+           <table>
+            <thead class="thead_hide">
+              <tr>
+                <th></th>
+                <th colspan="2" scope="colgroup">2024.03.31</th>
+                <th colspan="2" scope="colgroup">2023.12.31</th>
+                <th colspan="2" scope="colgroup">2022.12.31</th>
+              </tr>
+    
+              <tr>
+                <th></th>
+                <th scope="col">연결</th>
+                <th scope="col">별도</th>
+                <th scope="col">연결</th>
+                <th scope="col">별도</th>
+                <th scope="col">연결</th>
+                <th scope="col">별도</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th scope="row">자본총계</th>
+                <td>546,174</td>
+                <td>586,180</td>
+                <td>540,086</td>
+                <td>577,951</td>
+                <td>496,823</td>
+                <td>522,624</td>
+              </tr>
+            </tfoot>
+
+
+            <tbody>
+              <tr>
+                <th scope="row">지배기업 소유주지분</th>
+                <td>545,584</td>
+                <td></td>
+                <td>539,509</td>
+                <td></td>
+                <td>496,295</td>
+                <td>-</td>
+             </tr>
+
+              <tr>
+                <th scope="row">(1)자본금</th>
+                <td>3,922</td>
+                <td>3,922</td>
+                <td>3,922</td>
+                <td>3,922</td>
+                <td>3,922</td>
+                <td>3,922</td>
+              </tr>
+
+              <tr>
+                <th scope="row">(2)이익잉여금</th>
+                <td>328,909</td>
+                <td>370,886</td>
+                <td>321,791</td>
+                <td>361,785</td>
+                <td>275,656</td>
+                <td>302,847</td>
+              </tr>
+
+              <tr>
+                <th scope="row">(3)기타자본구성요소</th>
+                <td>212,754</td>
+                <td>211,372</td>
+                <td>213,796</td>
+                <td>212,244</td>
+                <td>216,717</td>
+                <td>215,855</td>
+              </tr>
+
+              <tr>
+                <th scope="row">비지배지분</th>
+                <td>590</td>
+                <td>-</td>
+                <td>577</td>
+                <td>-</td>
+                <td>528</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+       
+
+
+               <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th colspan="2" scope="colgroup">2024.01 ~ 2024.03	</th>
+                  <th colspan="2" scope="colgroup">2023.01 ~ 2023.03</th>
+                  <th colspan="2" scope="colgroup">2022.01 ~ 2022.03</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">매출액</th>
+                  <td>444,285</td>
+                  <td>429,017</td>
+                  <td>449,393</td>
+                  <td>431,640</td>
+                  <td>401,950</td>
+                  <td>389,543</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">영업이익</th>
+                  <td>19,487</td>
+                  <td>21,383</td>
+                  <td>12,627</td>
+                  <td>17,418</td>
+                  <td>16,977</td>
+                  <td>19,144</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">법인세비용차감전순이익</th>
+                  <td>21,484</td>
+                  <td>23,343</td>
+                  <td>17,375</td>
+                  <td>21,957</td>
+                  <td>13,408</td>
+                  <td>15,674</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">반기순이익</th>
+                  <td>15,748</td>
+                  <td>17,717</td>
+                  <td>12,045</td>
+                  <td>16,336</td>
+                  <td>8,815</td>
+                  <td>11,081</td>
+                </tr>
+              </tbody>
+            </table>
+          
+            </table>
+            <p class="posi_ab02">매일유업, IFRS 기준</p>
+          </div>
+           </section>
+
+     
+   
+         
+        
+         
+       
+
+     
+      
+        
+     
+
+      <!--
+
+-->
+
+
+
+
+
+
+   
+  </body>
+</html>

@@ -1,0 +1,168 @@
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ul,
+li,
+dl,
+dt,
+dd,
+img,
+br {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans", "맑은 고딕", "나눔고딕", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+address {
+  font-style: normal;
+}
+
+/* common */
+.hide {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+fieldset{
+  border:0;
+}
+.log_in_wrap{
+    display:flex;
+}
+#user_id, #user_pw{
+    border:none;
+    width: 320px;
+    height: 20px;
+    font-size: 16px;
+    appearance:none;
+    outline: 0;
+    position:relative;
+    left: 10px
+}
+.id_wrap{
+    width: 350px;
+    height: 20px;
+    display:block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position:relative;
+    left: 10px;
+}
+
+.pw_wrap{
+    width: 350px;
+    height: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    left: 10px
+}
+button{
+    width: 410px;
+    height: 50px;
+    border:none;
+    background: #194e91;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+}
+.all_wrap{
+    width: 100%;
+    margin:0 auto;
+}
+.position_wrap{
+    width: 460px;
+    margin: 0 auto
+}
+h1{
+    width: 170px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.log_in_box{
+    width: 410px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid #194e91;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+#remember_user_id{
+    margin-bottom: 20px;
+}
+.log_in_wrap{
+    border: 2px solid #e2e2e2;
+    width: 460px;
+    height: 260px;
+    margin:0 auto;
+    position:relative;
+    border-radius: 10px;
+
+    
+}
+.log_in_box_wrap{
+    position:absolute;
+    margin-top: 20px;
+}
+
+.user_more ul{
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  font-size: 14px;
+}
+.user_more li{
+  border-right:2px solid #d3d3d3
+}
+.user_more li a{
+  display: block;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.user_more li:last-child{
+  border-right:0
+}
+.user_more li a:hover{
+  text-decoration: underline;
+}
+.button_wrap{
+  position:relative;
+  left: 10px;
+}
+
