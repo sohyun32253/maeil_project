@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../images/main_icon.png">
+    <link rel="stylesheet" href="css/join_us.css">
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="js/join_us.js"></script>
+    <title>회원가입</title>
+  </head>
+  <body>
+    <h1><a href="../../index.html"><img src="images/logo.jpg" alt=""></a></h1>
+    <div class="form_wrap">
+      <div class="form_box">
+        <form name="join_form" action="" method="get" onsubmit="return join_form_check()">
+          <fieldset>
+            <legend>회원가입</legend>
+            <p class="box1">
+              <label for="u_name"></label>
+              <input type="text" name="u_name" id="u_name" placeholder="이름" required/>  
+            </p>
+
+            <p>
+              <label for="u_id"></label>
+              <p class="form_line id_form" >
+                <input type="text" name="u_id" id="u_id" placeholder="아이디" required/>
+                <button type="button" id="id_check" onclick="checkAndSaveId()">아이디 중복 확인</button>
+              </p>  
+              <span>* 영문, 숫자 조합으로 4~12글자만 입력할 수 있습니다.</span>
+            </p>
+
+            <p>
+              <label for="pwd"></label>
+              <input type="password" name="pwd" id="pwd" placeholder="비밀번호" required/>
+              <a href="#none" id="show_pwd" onclick="change_view1()">비밀번호 표시</a> <br/>
+              <span>* 4~8글자만 입력할 수 있습니다.</span>
+            </p>
+
+            <p>
+              <label for="repwd"></label>
+              <input type="password" name="repwd" id="repwd" placeholder="비밀번호 확인" required/>
+              <a href="#none" id="re_pwd" onclick="change_view2()" >비밀번호 표시</a>
+            </p>
+
+            <p>
+              <label for="mobile"></label>
+              <input type="text" name="mobile" id="mobile" placeholder="전화번호 입력" required/> <br/>
+              <span>* "-" 없이 숫자만 입력하세요.</span>
+            </p>
+
+            <p class="email">
+              <label for="email_id"></label>
+              <input type="text" name="email_id" id="email_id" placeholder="이메일 입력"/> @
+              <input type="text" name="email_dns" id="email_dns" />
+              <select name="email_sel" id="email_sel" onchange="change_email()">
+                <option value="">직접 입력</option>
+                <option value="naver.com">네이버</option>
+                <option value="hanmail.net">다음</option>
+                <option value="gmail.com">구글</option>
+              </select>
+            </p>
+
+            <p class="address">
+              <label for="postalcode"></label>
+              <p class="form_line">
+              <input type="text" id="postalcode" placeholder="우편번호">
+              <input type="button" id="search_addr" value="우편번호 찾기"></p>
+              <input type="text" id="addr" placeholder="주소"> <br>
+              <input type="text" id="detail_addr" placeholder="상세주소"> 
+              <input type="text" id="refer_addr" placeholder="참고항목">
+            </p>
+
+            <p>
+              <input type="checkbox" name="apply" id="apply" value="y" required/>
+              약관 동의
+            </p>
+
+            <p class="join">
+              <button type="submit" class="join_go">회원가입</button>
+              <button type="button" onclick="history.back()">돌아가기</button>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

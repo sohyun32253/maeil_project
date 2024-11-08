@@ -1,10 +1,10 @@
-
-$(document).ready(function (){
+$(document).ready(function () {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 700) { // Adjust the scroll distance as needed
-            $(".slide_up, .graph p").slideDown(1500); // 500 milliseconds
+        if ($(this).scrollTop() > 700) {
+            $(".graph p,.graph div").slideDown(1000);
         }else{
-            $(".slide_up, .graph p").slideUp(1500); 
+            $(".graph p,.graph div").slideUp(1000);
         }
     });
 });
+

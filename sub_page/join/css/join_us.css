@@ -1,0 +1,159 @@
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ul,
+li,
+dl,
+dt,
+dd,
+img,
+br {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans", "맑은 고딕", "나눔고딕", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+address {
+  font-style: normal;
+}
+
+/* common */
+
+h1{
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  h1 img{
+    width: 170px;
+    height: 101px;
+  }
+
+  form{
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 600px;
+    margin: auto;
+    border: 2px solid #e2e2e2;
+    border-radius: 10px;
+  }
+
+  fieldset{
+    border: none;
+  }
+
+  legend{
+    display: none;
+  }
+
+  input{
+    font-size: 18px;
+  }
+
+  p{
+    margin-bottom: 20px;
+  }
+
+  a{
+    font-size: 14px;
+    color: #316fc0;
+  }
+
+  input[type="text"],input[type="password"] {
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  input[type="button"],button{
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    border: none;
+    background: #194e91;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  span{
+    font-size: 14px;
+    color: tomato;
+  }
+
+  fieldset{
+    padding: 10px;
+  }
+
+  .form_line{
+    align-items: center;
+    display: flex;
+  }
+
+  .id_form{
+    margin-bottom: 0;
+  }
+
+  #id_check,#search_addr{
+    margin-left: 10px;
+  }
+
+  #addr{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  select{
+    width: 100px;
+    height: 40px;
+  }
+
+  .form_wrap{
+    position: relative;
+    width: 100%;
+  }
+
+  .form_box{
+    padding-bottom: 20px;
+  }
+
+  .join{
+    text-align: center;
+  }
+
+  .join button{
+    width: 270px;
+  }
+
+  .join_go{
+    margin-right: 5px;
+  }
+
+  p:last-child{
+    margin-bottom: 0;
+  }
