@@ -40,3 +40,5 @@
 DESIGN TOOL – figma, illustrator
 *메인, 서브 페이지 레이아웃 작업 (figma) 
 
+![readme_01](https://github.com/user-attachments/assets/54c85c0d-9c32-4949-b269-592f406b1401)
+
