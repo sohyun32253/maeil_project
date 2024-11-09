@@ -37,10 +37,12 @@
 초기 기획 단계에서 사용자 니즈를 파악하기 위해 각자의 경험과 타 웹사이트 구성을 자세하게 분석하면서 다양한 의견을 수렴했습니다. 
 효율적인 역할 분담을 위해 각자 맡을 파트를 조율하고 문제 발생 시 서로 의견을 주고 받으면서 효과적인 협업과 의견 조율의 중요성을 배울 수 있는 시간이 되었습니다.
 
-![maeil_readme_01](https://github.com/user-attachments/assets/93449028-069f-4d28-9996-4ac1f56ff984)
-
 DESIGN TOOL – figma, illustrator
 *메인, 서브 페이지 레이아웃 작업 (figma) 
+![maeil_readme_01](https://github.com/user-attachments/assets/93449028-069f-4d28-9996-4ac1f56ff984)
 
-![readme_01](https://github.com/user-attachments/assets/54c85c0d-9c32-4949-b269-592f406b1401)
+
+WEB TOOL – html5, css3, javascript, jquery
+![maeil_readme_02](https://github.com/user-attachments/assets/ba075b74-51eb-4247-93ee-82183b05811a)
+![maeil_readme_03](https://github.com/user-attachments/assets/56a08508-2fa3-4fb1-a08c-8b2b8bf55f57)
 
