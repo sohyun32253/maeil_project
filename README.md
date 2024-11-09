@@ -39,4 +39,11 @@
 
 DESIGN TOOL – figma, illustrator
 *메인, 서브 페이지 레이아웃 작업 (figma) 
+![maeil_readme_01](https://github.com/user-attachments/assets/93449028-069f-4d28-9996-4ac1f56ff984)
+
+
+WEB TOOL – html5, css3, javascript, jquery
+![maeil_readme_02](https://github.com/user-attachments/assets/ba075b74-51eb-4247-93ee-82183b05811a)
+![maeil_readme_03](https://github.com/user-attachments/assets/6db45732-47b7-4caa-84d7-b6d1a43ea9a1)
+![maeil_readme_04](https://github.com/user-attachments/assets/2c1ad719-0743-4455-94ff-597aaab79813)
 
