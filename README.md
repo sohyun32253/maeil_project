@@ -12,9 +12,10 @@
 > - 매일유업이 상징하는 기업의 이미지(사회 공헌, 청렴함, 다양한 유형의 소비자 고려 등)를 담아냄
 > - 사이트의 불편한 부분들을 개선하고 메인 페이지의 내용을 정비하여 사용자의 편의성을 높임
 
-#### 배포 주소 : https://sohyun32253.github.io/maeil_project/
+#### 배포 주소 : https://sohyun32253.github.io/maeil_project/매일유업_기획서_1조.pptx
 
-#### 기획서 링크 : 매일유업_기획서_1조.pptx (위 파일에서 다운로드)
+#### 기획서 링크 :[프로젝트 발표 자료 (PPT) 다운로드](https://github.com/sohyun32253/maeil_project/raw/main/saltrain_2조.pptx)
+
 
 #### 주요 기능 소개 
 > - gnb 메뉴를 간소화하고 마우스를 올릴 때 나타나도록 구성하여 편의성 강화
