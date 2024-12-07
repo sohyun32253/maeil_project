@@ -12,7 +12,7 @@
 > - 매일유업이 상징하는 기업의 이미지(사회 공헌, 청렴함, 다양한 유형의 소비자 고려 등)를 담아냄
 > - 사이트의 불편한 부분들을 개선하고 메인 페이지의 내용을 정비하여 사용자의 편의성을 높임
 
-#### 배포 주소 : (https://sohyun32253.github.io/maeil_project/)
+#### 배포 주소 : https://sohyun32253.github.io/maeil_project/
 
 #### 기획서 링크 :[프로젝트 발표 자료 (PPT) 다운로드](https://github.com/sohyun32253/maeil_project/raw/main/매일유업_기획서_1조.pptx)
 
