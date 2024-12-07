@@ -14,7 +14,7 @@
 
 #### 배포 주소 : https://sohyun32253.github.io/maeil_project/매일유업_기획서_1조.pptx
 
-#### 기획서 링크 :[프로젝트 발표 자료 (PPT) 다운로드](https://github.com/sohyun32253/maeil_project/raw/main/saltrain_2조.pptx)
+#### 기획서 링크 :[프로젝트 발표 자료 (PPT) 다운로드](https://github.com/sohyun32253/maeil_project/raw/main/매일유업_기획서_1조.pptx)
 
 
 #### 주요 기능 소개 
