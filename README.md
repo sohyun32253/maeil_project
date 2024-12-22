@@ -16,6 +16,8 @@
 
 #### 기획서 링크 :https://docs.google.com/presentation/d/150L0vaZvVKBXNVa-0trdF9KvdJFhktq_rFuDtzSXuF8/edit?usp=sharing
 
+#### 코드 관리 : https://plant-paddleboat-f1c.notion.site/1642cfe07323808184cccd46b0a3e89d?pvs=4
+
 
 #### 주요 기능 소개 
 > - gnb 메뉴를 간소화하고 마우스를 올릴 때 나타나도록 구성하여 편의성 강화
